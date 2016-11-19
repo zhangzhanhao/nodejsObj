@@ -1,0 +1,25 @@
+//
+   Created by lanou on 16/11/18.
+extends layout
+
+block content
+    link(rel="styleSheet" href="/stylesheets/setclass.css")
+    div.form
+        div.classname
+            span 课程名称:
+            input.classtitle(type="text")
+        div.type
+            div 类型:
+            span 直播
+            input.type_i.typei1(type="radio" name="type")
+            span 点播
+            input.type_i.typei2(type="radio" name="type")
+        div.des
+            span 描述:
+            textarea
+        div.qian
+            span 价格:
+            input(type="text")
+        div.btn 提交
+        script(src="/js/ajax.js")
+        script(src='/js/setclass.js')

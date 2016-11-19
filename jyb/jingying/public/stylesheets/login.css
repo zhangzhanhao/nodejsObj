@@ -1,0 +1,96 @@
+.bg{
+    height: 678px;
+    background: url("http://www.jingyingba.com/Public/home/images/logreg_bg.jpg") center;
+    min-width: 1232px;
+
+}
+.zhong{
+    height: 678px;
+    position: relative;
+    width: 1232px;
+    margin: 0 auto;
+}
+.box{
+    width: 352px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+.longinhead{
+    height:60px;
+    overflow: hidden;
+}
+.longinhead div{
+    color:dimgray;
+    height: 60px;
+    line-height: 60px;
+    width:50%;
+    text-align: center;
+    font-size: 18px;
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+#ac{
+    color:white;
+    background: rgba(0,0,0,0.6);
+}
+#show{
+    display: block;
+}
+.info .i{
+    width: 245px;
+    height:40px;
+    background: transparent;
+    border:1px solid white;
+    margin: 5px;
+    padding-left: 40px;
+    color:white;
+    font-size: 16px;
+}
+.info{
+    display: none;
+}
+.info1{
+    padding: 30px 26px;
+    height:276px;
+    background: rgba(0,0,0,0.6);
+}
+.info2{
+    height:368px;
+    padding: 30px 26px;
+    background: rgba(0,0,0,0.6);
+
+}
+.remember{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.remember span{
+    color:white;
+}
+.btn1{
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color:white;
+    background: orangered;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn2{
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color:white;
+    background: orangered;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.msg1{
+    color:red;
+    height: 16px;
+}
+.msg2{
+    color:red;
+    height: 16px;
+}

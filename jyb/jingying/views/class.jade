@@ -1,0 +1,36 @@
+//
+   Created by lanou on 16/11/17.
+extends layout
+
+block content
+    link(rel="styleSheet" href="/stylesheets/class.css")
+    div.bigbox
+        div.banner
+            ul
+                li.fl#ac1
+                    a(href="")
+                        img(src="http://www.jingyingba.com/Public/home/images/banner1.jpg")
+                li.fl
+                    a(href="")
+                        img(src="http://www.jingyingba.com/Public/home/images/banner2.jpg")
+                li.fl
+                    a(href="")
+                        img(src="http://www.jingyingba.com/Public/home/images/banner3.jpg")
+            ol
+                li#ac2
+                li
+                li
+        div.kecheng
+            ul
+                if(data)
+                    -each item,index in data
+                        li.listone
+                            div.img.fl
+                            p.fl= item.title
+                            p.fl= item.des
+                            p.fl
+                                span ￥
+                                span= item.price
+
+
+    script(src="/js/class.js")

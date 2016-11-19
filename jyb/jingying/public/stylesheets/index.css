@@ -1,0 +1,82 @@
+.banner{
+    width:1232px;
+    height:676px;
+    margin: 20px auto 20px;
+    background: url("http://www.jingyingba.com/Public/home/images/index_bg.png");
+    position: relative;
+}
+.banner ul{
+    /*overflow: hidden;*/
+    height: 200px;
+    width:960px;
+    position: absolute;
+    bottom:80px;
+    left:50%;
+    margin-left: -480px;
+}
+.banner ul li{
+    border:1px solid white;
+    width: 233px;
+    height: 198px;
+    border-radius: 10px;
+    background: white;
+    margin-right: 5px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.banner ul li:hover{
+    border:1px solid #fb6c03;
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 30px white;
+
+}
+.banner ul li a span{
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 28px;
+    margin-bottom: 18px;
+}
+.banner ul li:hover h2{
+    color:#fb6c03;
+}
+.ios{
+    background: url("http://www.jingyingba.com/Public/home/images/ios_bg.png") no-repeat center center;
+}
+.banner ul li:hover .ios{
+    background: url("http://www.jingyingba.com/Public/home/images/ios_bg2.png") no-repeat center center;
+}
+.h5{
+    background: url("http://www.jingyingba.com/Public/home/images/html5_bg.png") no-repeat center center;
+}
+.banner ul li:hover .h5{
+    background: url("http://www.jingyingba.com/Public/home/images/html5_bg2.png") no-repeat center center;
+}
+.u3d{
+    background: url("http://www.jingyingba.com/Public/home/images/unity_bg.png") no-repeat center center;
+}
+.banner ul li:hover .u3d{
+    background: url("http://www.jingyingba.com/Public/home/images/unity_bg2.png") no-repeat center center;
+}
+.dian{
+    text-align: center;
+    padding-top: 50px;
+}
+.banner ul li:hover em{
+    background: #fb6c03;
+}
+em{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:#8194a6 ;
+    margin: 0 5px;
+}
+h2{
+    text-align: center;
+    color:#8194a6;
+}
