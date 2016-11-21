@@ -14,7 +14,7 @@ btn.onclick=function () {
     }else{
         type="点播"
     }
-    AJax("POST","/setclass","title="+title.value+"&type="+type+"&des="+des.value+"&price="+money.value,function (data) {
+    AJax("POST","/setclass","title="+title.value+"&type="+type+"&des="+des.value+"&price="+money.value+"&num="+"1",function (data) {
         var data=JSON.parse(data)
         alert(data.info)
     })

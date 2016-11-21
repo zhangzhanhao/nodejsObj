@@ -14,7 +14,8 @@ var classSchema = new mongoose.Schema({
     title: String,
     des: String,
     type: String,
-    price: String
+    price: String,
+    num: String
 });
 
 module.exports={kecheng:mongoose.model("class",classSchema,"class"),

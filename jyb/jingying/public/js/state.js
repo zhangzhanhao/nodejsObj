@@ -33,4 +33,12 @@ window.onload=function () {
         document.cookie = name+"="+escape(value)+expires+"; path=/";   //转码并赋值
     }
 
+    var ke=document.querySelectorAll(".class li a")
+    if(location.href.indexOf("type=1")!=-1){
+        ke[0].style.color="orangered"
+    }
+    if(location.href.indexOf("type=2")!=-1){
+        ke[1].style.color="orangered"
+    }
+
 }

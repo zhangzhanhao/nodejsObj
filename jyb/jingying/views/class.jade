@@ -21,16 +21,41 @@ block content
                 li
                 li
         div.kecheng
-            ul
-                if(data)
-                    -each item,index in data
-                        li.listone
-                            div.img.fl
-                            p.fl= item.title
-                            p.fl= item.des
-                            p.fl
-                                span ￥
-                                span= item.price
+            ul.list_left.fl
+                li
+                    a(href="/class"+ty+"?ty=all&kind="+kd ) 全部
+                li
+                    a(href="/class"+ty+"?ty=ios&kind="+kd ) IOS
+                li
+                    a(href="/class"+ty+"?ty=html5&kind="+kd ) HTML5
+                li
+                    a(href="/class"+ty+"?ty=u3d&kind="+kd ) Unity-3D
+                li
+                    a(href="/class"+ty+"?ty=rn&kind="+kd ) React Native
 
+            div.kechengright.fr
+                ul.head_tab
+                    li.fl
+                        a(href="/class"+ty+"?ty="+name+"&kind=all") 全部
+                    li.fl
+                        a(href="/class"+ty+"?ty="+name+"&kind=zb") 直播
+                    li.fl
+                        a(href="/class"+ty+"?ty="+name+"&kind=db") 点播
+                ul
+                    if(data)
+                        -each item,index in data
+                            li.listone
+                                div.img.fl
+                                div.title_des.fl
+                                    p.fl= item.title
+                                    p.fl= item.des
+                                div.price.fr
+                                    p
+                                        span ￥
+                                        span= item.price
+                                    div.dianzan
+                                        span.num(biao=item._id)= item.num
+                                        div.zan 赞
 
+    script(src="/js/ajax.js")
     script(src="/js/class.js")

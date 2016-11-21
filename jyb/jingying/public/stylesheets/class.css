@@ -36,17 +36,75 @@
 .kecheng{
     width: 1232px;
     margin: 0 auto;
+    overflow: hidden;
+}
+.kechengright{
+    width: 1026px;
+}
+.head_tab{
+    overflow: hidden;
+
+}
+.head_tab li a{
+    display: block;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    color:black;
+    background: white;
 }
 .listone{
-    border:2px solid darkgrey;
+    width:1004px;
+    height:170px;
+    border:1px solid darkgrey;
     overflow: hidden;
     margin: 5px 0 ;
+    padding: 10px;
+    background: white;
 }
-.listone p{
-    width: 300px;
-}
-.img{
-    width: 100px;
-    height:100px;
+.listone .img{
+    width: 170px;
+    height:170px;
     background: dodgerblue;
+}
+.title_des{
+    width: 476px;
+    margin-left: 10px;
+}
+.title_des p:nth-child(1){
+    font-size: 20px;
+}
+.title_des p{
+    padding: 0;
+    margin:0;
+    width: 476px;
+}
+.price p{
+    font-size: 25px;
+    color:#fb6c03;
+}
+.dianzan{
+    width:200px;
+    float: left;
+}
+.zan{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: deeppink;
+    color:white;
+    text-align: center;
+}
+.list_left li a{
+    display: block;
+    width: 184px;
+    height: 64px;
+    line-height: 64px;
+    text-indent: 3em;
+    color:black;
+    background: white;
+}
+.list_left li:nth-child(1) a{
+    color:orange;
 }

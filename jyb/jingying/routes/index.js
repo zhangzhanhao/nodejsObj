@@ -89,11 +89,13 @@ router.post('/setclass',function (req,res,next) {
         var type=req.body.type
         var des=req.body.des
         var price=req.body.price
+        var num=req.body.num
         mongo.kecheng.create({
             title: title,
             des: des,
             type: type,
-            price: price
+            price: price,
+            num: num
         },function (err,data) {
             if(err){return}
             res.send({
@@ -102,5 +104,15 @@ router.post('/setclass',function (req,res,next) {
             })
         })
 })
+
+
+router.post('/zan',function (req,res,next) {
+    var num=req.body.zan
+    var id=req.body.id
+    mongo.kecheng.findOneAndUpdate({"_id":id},{"num":num},function (err,user) {
+
+    })
+})
+
 
 module.exports = router;

@@ -31,6 +31,7 @@ app.use(session({
   cookie: {maxAge: 80000 },  //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
   resave: false,
   saveUninitialized: true,
+
 }));
 
 
